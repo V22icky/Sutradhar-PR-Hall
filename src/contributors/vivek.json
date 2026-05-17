@@ -1,0 +1,14 @@
+{
+  "name": "Vivek",
+  "username": "webdeveloperdesigner",
+  "bioType": "React Developer",
+  "customBio": "Building modern interfaces with beautiful animations and clean code.",
+  "skills": ["React", "CSS", "Framer Motion", "JavaScript"],
+  "socials": {
+    "github": "https://github.com/webdeveloperdesigner",
+    "linkedin": "https://linkedin.com/in/vivek",
+    "twitter": "",
+    "portfolio": ""
+  },
+  "theme": "indigo"
+}

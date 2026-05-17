@@ -1,0 +1,151 @@
+/* Timeline */
+.timeline-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, var(--primary-indigo), transparent);
+  opacity: 0.3;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 3rem;
+}
+
+.timeline-node {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--primary-indigo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(49, 46, 129, 0.2);
+  color: var(--primary-indigo);
+}
+
+.timeline-item.pr .timeline-node { border-color: var(--primary-teal); color: var(--primary-teal); }
+.timeline-item.milestone .timeline-node { border-color: #f59e0b; color: #f59e0b; }
+
+.timeline-content {
+  padding: 1.5rem;
+}
+
+.timeline-date {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content h4 {
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+}
+
+.timeline-content p {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+/* Contribution Flow */
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.step-card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.step-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step-number {
+  font-size: 2rem;
+  font-weight: 800;
+  opacity: 0.1;
+  color: var(--primary-indigo);
+}
+
+.step-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--grad-indigo);
+  color: white;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+}
+
+.step-card h3 {
+  font-size: 1.25rem;
+}
+
+.step-card p {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+.step-command {
+  background: #111827;
+  color: #e5e7eb;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: monospace;
+  font-size: 0.8125rem;
+  overflow-x: auto;
+}
+
+.step-command code {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    padding-left: 60px;
+  }
+  
+  .timeline-node {
+    left: 5px;
+  }
+}
+
+/* Dark Mode Overrides */
+.dark-mode .timeline-node {
+  background: var(--white);
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.2);
+}

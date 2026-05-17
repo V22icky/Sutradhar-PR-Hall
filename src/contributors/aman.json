@@ -1,0 +1,14 @@
+{
+  "name": "Aman",
+  "username": "aman-codes",
+  "bioType": "Backend Builder",
+  "customBio": "Node.js enthusiast. Loving databases, microservices, and fast APIs.",
+  "skills": ["Node.js", "Express", "MongoDB", "Git"],
+  "socials": {
+    "github": "https://github.com/aman-codes",
+    "linkedin": "",
+    "twitter": "",
+    "portfolio": ""
+  },
+  "theme": "teal"
+}

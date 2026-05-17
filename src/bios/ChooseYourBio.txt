@@ -1,0 +1,59 @@
+=========================================
+SUTRADHAR ARCHETYPE BIOS CONFIGURATION
+=========================================
+
+Each contributor archetype represents a profile style that developers can select to auto-fill their starter details. Below are the design configurations for all bio types:
+
+1. Frontend Explorer
+   - Icon: Layout
+   - Theme Accent: Indigo
+   - Short Description: Navigating the styling wilderness and crafting interface architectures.
+   - Recommended Skills: React, CSS, JavaScript, HTML5
+
+2. Backend Builder
+   - Icon: Server
+   - Theme Accent: Teal
+   - Short Description: Architecting robust pipelines, databases, and high-performance server structures.
+   - Recommended Skills: Node.js, Express, MongoDB, APIs
+
+3. Open Source Beginner
+   - Icon: Sparkles
+   - Theme Accent: Violet
+   - Short Description: Taking my first steps in the beautiful open-source garden. Excited to learn!
+   - Recommended Skills: Git, Markdown, JavaScript, CSS
+
+4. Documentation Hero
+   - Icon: BookOpen
+   - Theme Accent: Emerald
+   - Short Description: Bridging code and comprehension. Champion of guides, tutorials, and clear readmes.
+   - Recommended Skills: Markdown, Writing, Git, Tech Editing
+
+5. UI/UX Creator
+   - Icon: Palette
+   - Theme Accent: Rose
+   - Short Description: Blending pixel perfection with emotional design. Putting user joy first.
+   - Recommended Skills: Figma, CSS, Design Systems, HTML
+
+6. React Developer
+   - Icon: Code2
+   - Theme Accent: Indigo
+   - Short Description: Componentizing the world, state management enthusiast, rendering flawless interactions.
+   - Recommended Skills: React, JavaScript, Hooks, JSX
+
+7. Bug Hunter
+   - Icon: ShieldCheck
+   - Theme Accent: Amber
+   - Short Description: Tracking down exceptions, debugging edge cases, and cleaning memory leaks.
+   - Recommended Skills: Testing, Debugging, DevTools, JavaScript
+
+8. Security Learner
+   - Icon: ShieldAlert
+   - Theme Accent: Red
+   - Short Description: Deep-diving into security vectors, securing headers, and hardening workflows.
+   - Recommended Skills: Auth, HTTPS, JWT, DevSecOps
+
+9. Community Helper
+   - Icon: Users
+   - Theme Accent: Cyan
+   - Short Description: Supporting peers in issues, reviewing PRs, and welcoming new developers.
+   - Recommended Skills: Code Review, Mentorship, Git, Moderation

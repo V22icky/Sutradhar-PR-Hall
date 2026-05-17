@@ -1,0 +1,19 @@
+{
+  "name": "Your Name",
+  "username": "githubUsername",
+  "bioType": "Community Helper",
+  "customBio": "Helping debug newcomer tickets and supporting peer collaboration on GitHub.",
+  "skills": [
+    "Code Review",
+    "Git",
+    "Mentorship",
+    "Open Source"
+  ],
+  "socials": {
+    "github": "https://github.com/username",
+    "linkedin": "",
+    "twitter": "",
+    "portfolio": ""
+  },
+  "theme": "teal"
+}

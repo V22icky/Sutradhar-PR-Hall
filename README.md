@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# 🏛️ Sutradhar Hall - Contributor Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **Sutradhar Hall**, the official contributor recognition platform for the Sutradhar open-source ecosystem. This system is specifically designed to celebrate open-source contributions and empower beginners to confidently learn Git and GitHub pull request workflows.
 
-## Available Scripts
+Here, contributors can showcase their skills, contribution journey, active streak, and profile details by editing a single, safe contributor file.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **🏆 Contributor Hall of Fame**: A dynamic, searchable leaderboard showcasing merged PRs, streak statistics, and developer ranks.
+- **🎨 Interactive Profile Builder**: A visual wizard with step-by-step guidance that assists you in configuring your custom profile and selected bio archetypes.
+- **⚙️ Dynamic JSON Compilation**: Automatic loading of user JSON profiles using dynamic module imports. Maintainers merge your PR, and your profile immediately appears on the live site!
+- **⚡ Rate-Limit Resilient**: Embedded caching layers and safe **UI Avatars** initial fallbacks to bypass GitHub unauthenticated API rate limits.
+- **💫 Premium Visual Systems**:
+  - **Skiper31 3D Typography Scroll Animation**: Staggered scroll-driven parallax transitions revealing character letter components in 3D space.
+  - **Skiper40 CSS Links**: Stylized, high-fidelity responsive hover link animations with smooth transitions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Technology Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Framework**: React.js & React Router
+- **Animations**: Framer Motion (Scroll & Perspective transformations)
+- **Icons**: Lucide React
+- **Styling**: Plain, optimized CSS (Vanilla styling architecture)
+- **Data Integration**: JSON-based profiles dynamically fetched and cached alongside the GitHub API.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 How to Add Your Contributor Profile
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Getting listed on the official Hall of Fame is super easy and 100% beginner-safe. Follow these simple steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Step 1: Fork the Repository
+Click the **Fork** button at the top-right of the GitHub repository to create a copy in your own GitHub account.
 
-### `npm run eject`
+### Step 2: Use the Profile Builder Wizard
+1. Run the project locally (see [Local Development](#-local-development)) or visit the live site.
+2. Click **Create Profile** in the navigation bar to open the builder.
+3. Fill in your details:
+   - Your real GitHub username
+   - A custom display name & role
+   - A personalized bio (or select a premium pre-made **Developer Archetype**!)
+   - Select your preferred theme color accent & skills tags
+4. Once satisfied, click the **Copy JSON** button in the *Terminal Output Code Card* on the right!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Step 3: Create Your Profile File
+In your forked repository, navigate to:
+```bash
+src/contributors/
+```
+Create a new file named exactly `[your-github-username].json` (e.g. `octocat.json`) and paste the copied JSON contents inside.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> [!IMPORTANT]  
+> Only write/edit this single file! Do not modify any other codebase structures. This ensures your pull request is merged immediately and automatically.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Step 4: Create a Pull Request (PR)
+1. Commit your changes and push them to your fork.
+2. On GitHub, click **New Pull Request**.
+3. Submit your PR with a title like `feat: add [your-username] contributor profile`.
+4. Once merged by our maintainers, the build compilation system will bundle your file and add you to the Hall of Fame automatically!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 💻 Local Development
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Follow these steps to run the application locally on your machine:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed.
 
-### Code Splitting
+### 1. Clone your fork
+```bash
+git clone https://github.com/YOUR-USERNAME/pr-hall.git
+cd pr-hall
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 2. Install dependencies
+```bash
+npm install
+```
 
-### Analyzing the Bundle Size
+### 3. Start the local development server
+```bash
+npm start
+```
+Open [http://localhost:3000](http://localhost:3000) to view the application in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 4. Build for production
+```bash
+npm run build
+```
+This builds and optimizes the application for production deployment inside the `build` folder.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🛡️ Contribution Guidelines & Safety
 
-### Advanced Configuration
+To keep the platform safe and friendly for everyone:
+- **Only edit your own file** under `src/contributors/[your-username].json`.
+- **Do not include private information** like emails or passwords in your JSON.
+- **Ensure JSON formatting is correct** (the builder ensures valid formatting automatically!).
+- **Be respectful and kind** in your bio content.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy hacking, and welcome to the open-source community! 🚀
